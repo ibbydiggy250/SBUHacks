@@ -18,7 +18,8 @@ Our goal is to make digital communication inclusive by enabling instant ASL tran
 -	🖐️ Live Hand Tracking – Uses MediaPipe Hands to extract 3D landmarks from webcam or Zoom feed.
 
 -	🧩 Deep Learning Recognition – Classifies gestures using a lightweight PointNet model trained on ASL data.
--		💬 Real-time Translation – Converts ASL gestures into English words and sentences.
+  
+-	💬 Real-time Translation – Converts ASL gestures into English words and sentences.
 
 -   Zoom Integration – Injects translated captions or messages into Zoom using the Meeting SDK or Live Transcript API.
 
