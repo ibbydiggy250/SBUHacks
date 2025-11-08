@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Hand Tracking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="status">Loading...</div>
+    <div id="video-container">
+      <video id="webcam" autoplay playsinline muted></video>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="info-panel">
+      <div id="hand-info">
+        <div class="info-item">
+          <span class="label">Hands Detected:</span>
+          <span id="hand-count">0</span>
+        </div>
+        <div id="hand-details">
+          <div class="no-hands">Initializing...</div>
+        </div>
+      </div>
+      <div id="features-info">
+        <span class="label">Feature Vector:</span>
+        <span id="feature-dim">84 dimensions (21 landmarks × 2 coords × 2 hands)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MediaPipe Hands - Load these first -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  
+  <!-- App Script - Load after MediaPipe -->
+  <script src="app.js"></script>
+  
+  <script>
+    // Debug helper
+    console.log('MediaPipe Hands loaded:', typeof Hands !== 'undefined');
+    console.log('Camera utils loaded:', typeof Camera !== 'undefined');
+  </script>
+</body>
+</html>
