@@ -1,1 +1,52 @@
+# =========================
+# 🔹 PYTHON / GENERAL
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.DS_Store
+.env
+.vscode/
+.idea/
+
+# =========================
+# 🔹 VIRTUAL ENVIRONMENTS
+# =========================
+venv/
+.venv/
+env/
+ENV/
+*/venv/
+*/.venv/
+
+# =========================
+# 🔹 DATASETS & MODELS
+# =========================
+dataset.csv
+*.csv
+*.pkl
+*.h5
+*.npz
+*.npy
+
+# =========================
+# 🔹 OUTPUT / TEMP FILES
+# =========================
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+output/
+logs/
+temp/
+cache/
+
+# =========================
+# 🔹 MACOS / SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
 
